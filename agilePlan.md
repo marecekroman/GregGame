@@ -1,4 +1,4 @@
-Agile Plan for project "The Cake Chase":
+Agile Plan for project "Greg Game":
 
 Team Members:
 Michal
@@ -20,19 +20,19 @@ Game Setup and UI Initialization
 Description: Set up the initial game structure, including nodes for buttons, textures, and panels.
 Assigned to: Roman
 Estimated Time: 2 days
-Status: Pending
+Status: Done
 
 Player Movement and Input Handling
 Description: Implement player movement using buttons and keyboard input.
 Assigned to: Roman
 Estimated Time: 2 days
-Status: Pending
+Status: Done
 
 Game Timer Implementation
 Description: Implement main game timer and mouse timer functionalities.
 Assigned to: Roman
 Estimated Time: 1 day
-Status: Pending
+Status: Done
 
 Collision Detection
 Description: Implement collision detection between player, food, and mouse.

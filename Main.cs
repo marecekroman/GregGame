@@ -54,16 +54,19 @@ public partial class Main : Control
 		_gamePanel = GetNode<Panel>("GamePanel");
 		_controlPanel = GetNode<Panel>("ControlPanel");
 
-		_buttonUp = _controlPanel.GetNode<Button>("BtnUp");
-		_buttonRight = _controlPanel.GetNode<Button>("BtnRight");
-		_buttonDown = _controlPanel.GetNode<Button>("BtnDown");
-		_buttonLeft = _controlPanel.GetNode<Button>("BtnLeft");
-		_resetButton = _controlPanel.GetNode<Button>("BtnReset");
+		_buttonUp = GetNode<Button>("BtnUp");
+		_buttonRight = GetNode<Button>("BtnRight");
+		_buttonDown = GetNode<Button>("BtnDown");
+		_buttonLeft = GetNode<Button>("BtnLeft");
+		_resetButton = GetNode<Button>("BtnReset");
 
 		_mainTimer = GetNode<Timer>("MainTimer");
 		_mouseTimer = GetNode<Timer>("MouseTimer");
 
 		_cakeDisplay = GetNode<TextureRect>("CakeDisplay");
+
+		// Skrytí panelu
+		_controlPanel.Visible = false;
 	}
 
 	private void ConnectSignals()
@@ -157,13 +160,12 @@ public partial class Main : Control
 		if (_gamePanel != null)
 		{
 			var drawPosition = _gamePanel.GlobalPosition;
-			DrawGrid(drawPosition);
 			DrawImages(drawPosition);
 			CheckCollisions();
 		}
 	}
 
-	private void DrawGrid(Vector2 offset)
+	private void DrawImages(Vector2 offset)
 	{
 		var size = _gamePanel.Size;
 		_maxWidth = (int)size.X;
@@ -172,22 +174,6 @@ public partial class Main : Control
 		_stepWidth = _maxWidth / GridStepsWidth;
 		_stepHeight = _maxHeight / GridStepsHeight;
 
-		_gridWidth = _stepWidth;
-		_gridHeight = _stepHeight;
-
-		for (int i = 1; i < GridStepsWidth; i++)
-		{
-			DrawLine(offset + new Vector2(i * _stepWidth, 0), offset + new Vector2(i * _stepWidth, _maxHeight), Colors.Black);
-		}
-
-		for (int i = 1; i < GridStepsHeight; i++)
-		{
-			DrawLine(offset + new Vector2(0, i * _stepHeight), offset + new Vector2(_maxWidth, i * _stepHeight), Colors.Black);
-		}
-	}
-
-	private void DrawImages(Vector2 offset)
-	{
 		DrawTexture(_flowerOneTexture, offset + new Vector2(0 * _stepWidth, 0 * _stepHeight));
 		DrawTexture(_flowerOneTexture, offset + new Vector2(7 * _stepWidth, 5 * _stepHeight));
 		DrawTexture(_flowerOneTexture, offset + new Vector2(1 * _stepWidth, 3 * _stepHeight));

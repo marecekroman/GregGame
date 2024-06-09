@@ -13,68 +13,75 @@ offset_left = 792.0
 offset_right = 1155.0
 offset_bottom = 342.0
 expand_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="ControlPanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 792.0
+offset_left = 805.0
 offset_top = 342.0
 offset_right = 1155.0
-offset_bottom = 645.0
+offset_bottom = 656.0
 pivot_offset = Vector2(-793, -341)
-
-[node name="BtnUp" type="Button" parent="ControlPanel"]
-visibility_layer = 4
-layout_mode = 0
-offset_left = 131.0
-offset_top = 23.0
-offset_right = 193.0
-offset_bottom = 67.0
-scale = Vector2(1.359, 1.5)
-text = "Up"
-
-[node name="BtnDown" type="Button" parent="ControlPanel"]
-visibility_layer = 4
-offset_left = 131.0
-offset_top = 99.0
-offset_right = 193.0
-offset_bottom = 143.0
-scale = Vector2(1.359, 1.5)
-text = "Down"
-
-[node name="BtnLeft" type="Button" parent="ControlPanel"]
-visibility_layer = 4
-offset_left = 23.0
-offset_top = 99.0
-offset_right = 85.0
-offset_bottom = 143.0
-scale = Vector2(1.359, 1.5)
-text = "Left"
-
-[node name="BtnRight" type="Button" parent="ControlPanel"]
-visibility_layer = 4
-offset_left = 241.0
-offset_top = 99.0
-offset_right = 303.0
-offset_bottom = 143.0
-scale = Vector2(1.359, 1.5)
-text = "Right"
-
-[node name="BtnReset" type="Button" parent="ControlPanel"]
-visibility_layer = 4
-offset_left = 107.0
-offset_top = 187.0
-offset_right = 206.0
-offset_bottom = 248.0
-scale = Vector2(1.359, 1.5)
-text = "Reset"
+metadata/_edit_use_anchors_ = true
 
 [node name="GamePanel" type="Panel" parent="."]
 visibility_layer = 0
 layout_mode = 0
 offset_right = 792.0
 offset_bottom = 645.0
+metadata/_edit_use_anchors_ = true
 
 [node name="MainTimer" type="Timer" parent="."]
 
 [node name="MouseTimer" type="Timer" parent="."]
 wait_time = 0.15
+
+[node name="BtnUp" type="Button" parent="."]
+visibility_layer = 4
+layout_mode = 0
+offset_left = 936.0
+offset_top = 365.0
+offset_right = 998.0
+offset_bottom = 409.0
+scale = Vector2(1.359, 1.5)
+text = "Up"
+
+[node name="BtnDown" type="Button" parent="."]
+visibility_layer = 4
+layout_mode = 0
+offset_left = 936.0
+offset_top = 441.0
+offset_right = 998.0
+offset_bottom = 485.0
+scale = Vector2(1.359, 1.5)
+text = "Down"
+
+[node name="BtnLeft" type="Button" parent="."]
+visibility_layer = 4
+layout_mode = 0
+offset_left = 828.0
+offset_top = 441.0
+offset_right = 890.0
+offset_bottom = 485.0
+scale = Vector2(1.359, 1.5)
+text = "Left"
+
+[node name="BtnRight" type="Button" parent="."]
+visibility_layer = 4
+layout_mode = 0
+offset_left = 1046.0
+offset_top = 441.0
+offset_right = 1108.0
+offset_bottom = 485.0
+scale = Vector2(1.359, 1.5)
+text = "Right"
+
+[node name="BtnReset" type="Button" parent="."]
+visibility_layer = 4
+layout_mode = 0
+offset_left = 912.0
+offset_top = 529.0
+offset_right = 1011.0
+offset_bottom = 590.0
+scale = Vector2(1.359, 1.5)
+text = "Reset"
