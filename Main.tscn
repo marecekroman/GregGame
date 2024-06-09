@@ -2,52 +2,79 @@
 
 [ext_resource type="Script" path="res://Main.cs" id="1_iphqn"]
 
-[node name="Control" type="Control"]
+[node name="GameControl" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_iphqn")
 
-[node name="BtnUp" type="Button" parent="."]
+[node name="CakeDisplay" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 574.0
-offset_top = 221.0
-offset_right = 625.0
-offset_bottom = 267.0
+offset_left = 792.0
+offset_right = 1155.0
+offset_bottom = 342.0
+expand_mode = 2
 
-[node name="BtnDown" type="Button" parent="."]
+[node name="ControlPanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 667.0
-offset_top = 216.0
-offset_right = 728.0
-offset_bottom = 271.0
+offset_left = 792.0
+offset_top = 342.0
+offset_right = 1155.0
+offset_bottom = 645.0
+pivot_offset = Vector2(-793, -341)
 
-[node name="BtnRight" type="Button" parent="."]
+[node name="BtnUp" type="Button" parent="ControlPanel"]
+visibility_layer = 4
 layout_mode = 0
-offset_left = 573.0
-offset_top = 283.0
-offset_right = 622.0
-offset_bottom = 339.0
+offset_left = 131.0
+offset_top = 23.0
+offset_right = 193.0
+offset_bottom = 67.0
+scale = Vector2(1.359, 1.5)
+text = "Up"
 
-[node name="BtnLeft" type="Button" parent="."]
-layout_mode = 0
-offset_left = 677.0
-offset_top = 289.0
-offset_right = 719.0
-offset_bottom = 333.0
+[node name="BtnDown" type="Button" parent="ControlPanel"]
+visibility_layer = 4
+offset_left = 131.0
+offset_top = 99.0
+offset_right = 193.0
+offset_bottom = 143.0
+scale = Vector2(1.359, 1.5)
+text = "Down"
 
-[node name="BtnReset" type="Button" parent="."]
+[node name="BtnLeft" type="Button" parent="ControlPanel"]
+visibility_layer = 4
+offset_left = 23.0
+offset_top = 99.0
+offset_right = 85.0
+offset_bottom = 143.0
+scale = Vector2(1.359, 1.5)
+text = "Left"
+
+[node name="BtnRight" type="Button" parent="ControlPanel"]
+visibility_layer = 4
+offset_left = 241.0
+offset_top = 99.0
+offset_right = 303.0
+offset_bottom = 143.0
+scale = Vector2(1.359, 1.5)
+text = "Right"
+
+[node name="BtnReset" type="Button" parent="ControlPanel"]
+visibility_layer = 4
+offset_left = 107.0
+offset_top = 187.0
+offset_right = 206.0
+offset_bottom = 248.0
+scale = Vector2(1.359, 1.5)
+text = "Reset"
+
+[node name="GamePanel" type="Panel" parent="."]
+visibility_layer = 0
 layout_mode = 0
-offset_left = 618.0
-offset_top = 353.0
-offset_right = 703.0
-offset_bottom = 432.0
+offset_right = 792.0
+offset_bottom = 645.0
 
 [node name="MainTimer" type="Timer" parent="."]
 
 [node name="MouseTimer" type="Timer" parent="."]
 wait_time = 0.15
-
-[node name="CakeDisplay" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0

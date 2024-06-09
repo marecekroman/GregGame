@@ -3,6 +3,8 @@ using System;
 
 public partial class Main : Control
 {
+	private Panel _gamePanel;
+	private Panel _controlPanel;
 	private Button _buttonUp;
 	private Button _buttonRight;
 	private Button _buttonDown;
@@ -15,7 +17,6 @@ public partial class Main : Control
 	private Texture2D _playerTexture, _emptyPlateTexture, _foodTexture, _plateTexture, _sliceOneTexture, _sliceTwoTexture, _sliceThreeTexture, _sliceFourTexture, _sliceFiveTexture, _sliceSixTexture, _sliceSevenTexture, _fullCakeTexture, _victoryTexture, _lossTexture, _mouseTexture, _flowerOneTexture, _flowerTwoTexture, _stoneTwoTexture, _stoneOneTexture;
 
 	private TextureRect _cakeDisplay;
-	private TextureButton _buttonW, _buttonA, _buttonS, _buttonD;
 
 	private int _foodX = 2;
 	private int _foodY = 2;
@@ -50,19 +51,19 @@ public partial class Main : Control
 
 	private void InitializeNodes()
 	{
-		_buttonUp = GetNode<Button>("BtnUp");
-		_buttonRight = GetNode<Button>("BtnDown");
-		_buttonDown = GetNode<Button>("BtnRight");
-		_buttonLeft = GetNode<Button>("BtnLeft");
-		_resetButton = GetNode<Button>("BtnReset");
+		_gamePanel = GetNode<Panel>("GamePanel");
+		_controlPanel = GetNode<Panel>("ControlPanel");
+
+		_buttonUp = _controlPanel.GetNode<Button>("BtnUp");
+		_buttonRight = _controlPanel.GetNode<Button>("BtnRight");
+		_buttonDown = _controlPanel.GetNode<Button>("BtnDown");
+		_buttonLeft = _controlPanel.GetNode<Button>("BtnLeft");
+		_resetButton = _controlPanel.GetNode<Button>("BtnReset");
+
 		_mainTimer = GetNode<Timer>("MainTimer");
 		_mouseTimer = GetNode<Timer>("MouseTimer");
 
 		_cakeDisplay = GetNode<TextureRect>("CakeDisplay");
-		_buttonW = GetNode<TextureButton>("ButtonW");
-		_buttonA = GetNode<TextureButton>("ButtonA");
-		_buttonS = GetNode<TextureButton>("ButtonS");
-		_buttonD = GetNode<TextureButton>("ButtonD");
 	}
 
 	private void ConnectSignals()
@@ -117,11 +118,6 @@ public partial class Main : Control
 			GD.Load<Texture2D>("res://resources/sliceSeven.png"),
 			GD.Load<Texture2D>("res://resources/fullCake.png")
 		};
-
-		_buttonW.TextureNormal = GD.Load<Texture2D>("res://resources/button_w.png");
-		_buttonA.TextureNormal = GD.Load<Texture2D>("res://resources/button_a.png");
-		_buttonS.TextureNormal = GD.Load<Texture2D>("res://resources/button_s.png");
-		_buttonD.TextureNormal = GD.Load<Texture2D>("res://resources/button_d.png");
 	}
 
 	public override void _Process(double delta)
@@ -158,14 +154,18 @@ public partial class Main : Control
 
 	public override void _Draw()
 	{
-		DrawGrid();
-		DrawImages();
-		CheckCollisions();
+		if (_gamePanel != null)
+		{
+			var drawPosition = _gamePanel.GlobalPosition;
+			DrawGrid(drawPosition);
+			DrawImages(drawPosition);
+			CheckCollisions();
+		}
 	}
 
-	private void DrawGrid()
+	private void DrawGrid(Vector2 offset)
 	{
-		var size = GetViewportRect().Size;
+		var size = _gamePanel.Size;
 		_maxWidth = (int)size.X;
 		_maxHeight = (int)size.Y;
 
@@ -177,31 +177,31 @@ public partial class Main : Control
 
 		for (int i = 1; i < GridStepsWidth; i++)
 		{
-			DrawLine(new Vector2(i * _stepWidth, 0), new Vector2(i * _stepWidth, _maxHeight), Colors.Black);
+			DrawLine(offset + new Vector2(i * _stepWidth, 0), offset + new Vector2(i * _stepWidth, _maxHeight), Colors.Black);
 		}
 
 		for (int i = 1; i < GridStepsHeight; i++)
 		{
-			DrawLine(new Vector2(0, i * _stepHeight), new Vector2(_maxWidth, i * _stepHeight), Colors.Black);
+			DrawLine(offset + new Vector2(0, i * _stepHeight), offset + new Vector2(_maxWidth, i * _stepHeight), Colors.Black);
 		}
 	}
 
-	private void DrawImages()
+	private void DrawImages(Vector2 offset)
 	{
-		DrawTexture(_flowerOneTexture, new Vector2(0 * _stepWidth, 0 * _stepHeight));
-		DrawTexture(_flowerOneTexture, new Vector2(7 * _stepWidth, 5 * _stepHeight));
-		DrawTexture(_flowerOneTexture, new Vector2(1 * _stepWidth, 3 * _stepHeight));
-		DrawTexture(_flowerOneTexture, new Vector2(1 * _stepWidth, 9 * _stepHeight));
+		DrawTexture(_flowerOneTexture, offset + new Vector2(0 * _stepWidth, 0 * _stepHeight));
+		DrawTexture(_flowerOneTexture, offset + new Vector2(7 * _stepWidth, 5 * _stepHeight));
+		DrawTexture(_flowerOneTexture, offset + new Vector2(1 * _stepWidth, 3 * _stepHeight));
+		DrawTexture(_flowerOneTexture, offset + new Vector2(1 * _stepWidth, 9 * _stepHeight));
 
-		DrawTexture(_flowerTwoTexture, new Vector2(6 * _stepWidth, 3 * _stepHeight));
-		DrawTexture(_flowerTwoTexture, new Vector2(4 * _stepWidth, 5 * _stepHeight));
+		DrawTexture(_flowerTwoTexture, offset + new Vector2(6 * _stepWidth, 3 * _stepHeight));
+		DrawTexture(_flowerTwoTexture, offset + new Vector2(4 * _stepWidth, 5 * _stepHeight));
 
-		DrawTexture(_stoneTwoTexture, new Vector2(5 * _stepWidth, 0 * _stepHeight));
-		DrawTexture(_stoneOneTexture, new Vector2(7 * _stepWidth, 8 * _stepHeight));
+		DrawTexture(_stoneTwoTexture, offset + new Vector2(5 * _stepWidth, 0 * _stepHeight));
+		DrawTexture(_stoneOneTexture, offset + new Vector2(7 * _stepWidth, 8 * _stepHeight));
 
-		DrawTexture(_foodTexture, new Vector2(_foodX * _stepWidth, _foodY * _stepHeight));
-		DrawTexture(_playerTexture, new Vector2(_playerX * _stepWidth, _playerY * _stepHeight));
-		DrawTexture(_mouseTexture, new Vector2(_mouseX * _stepWidth, _mouseY * _stepHeight));
+		DrawTexture(_foodTexture, offset + new Vector2(_foodX * _stepWidth, _foodY * _stepHeight));
+		DrawTexture(_playerTexture, offset + new Vector2(_playerX * _stepWidth, _playerY * _stepHeight));
+		DrawTexture(_mouseTexture, offset + new Vector2(_mouseX * _stepWidth, _mouseY * _stepHeight));
 	}
 
 	private void CheckCollisions()
@@ -373,8 +373,8 @@ public partial class Main : Control
 		_collectedFoodCount = 0;
 		_isGameFinished = false;
 		_mouseTimer.Start();
-		UpdateCakeDisplay(0);  // Reset to full cake
+		UpdateCakeDisplay(0);  // Reset to empty plate
 		QueueRedraw();
-		_resetButton.Visible = false;
+		_resetButton.Visible = true;
 	}
 }
