@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GregGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56416c27ae2fa31c66510e8bb8dfcbeec9cd2b23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9aad65f8cf6ec4c5b677fc2363db444e9841228")]
 [assembly: System.Reflection.AssemblyProductAttribute("GregGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GregGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

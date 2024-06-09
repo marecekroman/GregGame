@@ -7,18 +7,6 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_iphqn")
 
-[node name="Panel1" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 825.0
-offset_bottom = 470.0
-
-[node name="Panel2" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 549.0
-offset_top = 1.0
-offset_right = 824.0
-offset_bottom = 469.0
-
 [node name="BtnUp" type="Button" parent="."]
 layout_mode = 0
 offset_left = 574.0
@@ -58,3 +46,8 @@ offset_bottom = 432.0
 
 [node name="MouseTimer" type="Timer" parent="."]
 wait_time = 0.15
+
+[node name="CakeDisplay" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

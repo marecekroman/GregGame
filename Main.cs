@@ -3,8 +3,6 @@ using System;
 
 public partial class Main : Control
 {
-	private Panel _panel1;
-	private Panel _panel2;
 	private Button _buttonUp;
 	private Button _buttonRight;
 	private Button _buttonDown;
@@ -15,6 +13,9 @@ public partial class Main : Control
 	private Random _random = new Random();
 
 	private Texture2D _playerTexture, _emptyPlateTexture, _foodTexture, _plateTexture, _sliceOneTexture, _sliceTwoTexture, _sliceThreeTexture, _sliceFourTexture, _sliceFiveTexture, _sliceSixTexture, _sliceSevenTexture, _fullCakeTexture, _victoryTexture, _lossTexture, _mouseTexture, _flowerOneTexture, _flowerTwoTexture, _stoneTwoTexture, _stoneOneTexture;
+
+	private TextureRect _cakeDisplay;
+	private TextureButton _buttonW, _buttonA, _buttonS, _buttonD;
 
 	private int _foodX = 2;
 	private int _foodY = 2;
@@ -36,18 +37,19 @@ public partial class Main : Control
 	private int _stepWidth = 0;
 	private int _stepHeight = 0;
 
+	private Texture2D[] _cakeTextures;
+
 	public override void _Ready()
 	{
 		InitializeNodes();
 		ConnectSignals();
 		StartTimers();
 		LoadTextures();
+		UpdateCakeDisplay(0);  // Starting with an empty plate
 	}
 
 	private void InitializeNodes()
 	{
-		_panel1 = GetNode<Panel>("Panel1");
-		_panel2 = GetNode<Panel>("Panel2");
 		_buttonUp = GetNode<Button>("BtnUp");
 		_buttonRight = GetNode<Button>("BtnDown");
 		_buttonDown = GetNode<Button>("BtnRight");
@@ -55,6 +57,12 @@ public partial class Main : Control
 		_resetButton = GetNode<Button>("BtnReset");
 		_mainTimer = GetNode<Timer>("MainTimer");
 		_mouseTimer = GetNode<Timer>("MouseTimer");
+
+		_cakeDisplay = GetNode<TextureRect>("CakeDisplay");
+		_buttonW = GetNode<TextureButton>("ButtonW");
+		_buttonA = GetNode<TextureButton>("ButtonA");
+		_buttonS = GetNode<TextureButton>("ButtonS");
+		_buttonD = GetNode<TextureButton>("ButtonD");
 	}
 
 	private void ConnectSignals()
@@ -96,6 +104,24 @@ public partial class Main : Control
 		_flowerTwoTexture = GD.Load<Texture2D>("res://resources/flowertwo.png");
 		_stoneTwoTexture = GD.Load<Texture2D>("res://resources/stonetwo.png");
 		_stoneOneTexture = GD.Load<Texture2D>("res://resources/stoneone.png");
+
+		_cakeTextures = new Texture2D[]
+		{
+			GD.Load<Texture2D>("res://resources/plateEmpty.png"),
+			GD.Load<Texture2D>("res://resources/sliceOne.png"),
+			GD.Load<Texture2D>("res://resources/sliceTwo.png"),
+			GD.Load<Texture2D>("res://resources/sliceThree.png"),
+			GD.Load<Texture2D>("res://resources/sliceFour.png"),
+			GD.Load<Texture2D>("res://resources/sliceFive.png"),
+			GD.Load<Texture2D>("res://resources/sliceSix.png"),
+			GD.Load<Texture2D>("res://resources/sliceSeven.png"),
+			GD.Load<Texture2D>("res://resources/fullCake.png")
+		};
+
+		_buttonW.TextureNormal = GD.Load<Texture2D>("res://resources/button_w.png");
+		_buttonA.TextureNormal = GD.Load<Texture2D>("res://resources/button_a.png");
+		_buttonS.TextureNormal = GD.Load<Texture2D>("res://resources/button_s.png");
+		_buttonD.TextureNormal = GD.Load<Texture2D>("res://resources/button_d.png");
 	}
 
 	public override void _Process(double delta)
@@ -191,12 +217,18 @@ public partial class Main : Control
 		if (_foodX == _playerX && _foodY == _playerY)
 		{
 			_collectedFoodCount++;
+			UpdateCakeDisplay(_collectedFoodCount);
 			_mainTimer.Stop();
 			_foodX = _random.Next(0, 9);
 			_foodY = _random.Next(0, 9);
 			_mainTimer.Start();
 			QueueRedraw();
 		}
+	}
+
+	private void UpdateCakeDisplay(int cakeLevel)
+	{
+		_cakeDisplay.Texture = _cakeTextures[Math.Min(cakeLevel, _cakeTextures.Length - 1)];
 	}
 
 	private void CheckVictoryCondition()
@@ -228,6 +260,7 @@ public partial class Main : Control
 		if (_mouseX == _playerX && _mouseY == _playerY)
 		{
 			_collectedFoodCount--;
+			UpdateCakeDisplay(_collectedFoodCount);
 			_mouseTimer.Stop();
 			_mouseX = _random.Next(0, 9);
 			_mouseY = _random.Next(0, 9);
@@ -340,6 +373,7 @@ public partial class Main : Control
 		_collectedFoodCount = 0;
 		_isGameFinished = false;
 		_mouseTimer.Start();
+		UpdateCakeDisplay(0);  // Reset to full cake
 		QueueRedraw();
 		_resetButton.Visible = false;
 	}
