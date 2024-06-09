@@ -46,6 +46,12 @@ Assigned to: Michal
 Estimated Time: 2 days
 Status: Pending
 
+Sound Design
+Description: Develop and integrate sound effects for collecting cake pieces, interactions, and mouse squeaks.
+Assigned to: Michal
+Estimated Time: 2 days
+Status: Pending
+
 Review & Retrospective (14.06.2024)
 Review: Test the basic game functionalities.
 Retrospective: Discuss what went well and what could be improved for the next sprint.
@@ -96,17 +102,19 @@ Retrospective: Discuss overall project performance and areas for future improvem
 Summary of Tasks Distribution:
 Roman:
 Game Setup and UI Initialization
+Player Movement and Input Handling
 Game Timer Implementation
 Game Over Conditions
 Bug Fixes and Optimization
 Project Presentation Preparation
 
 Michal:
-Player Movement and Input Handling
+Sound Design
 Collision Detection
 Cake Visualization
 UI Improvements
 Basic Game Logic
+Project Presentation Preparation
 
 Milestones:
 Sprint 1 Completion (14.06.2024): Basic game mechanics and initial setup completed.
