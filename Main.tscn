@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://gorefjhlbesb"]
+
+[ext_resource type="Script" path="res://Main.cs" id="1_iphqn"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_iphqn")
+
+[node name="Panel1" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 825.0
+offset_bottom = 470.0
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 1.0
+offset_right = 824.0
+offset_bottom = 469.0
+
+[node name="BtnUp" type="Button" parent="."]
+layout_mode = 0
+offset_left = 574.0
+offset_top = 221.0
+offset_right = 625.0
+offset_bottom = 267.0
+
+[node name="BtnDown" type="Button" parent="."]
+layout_mode = 0
+offset_left = 667.0
+offset_top = 216.0
+offset_right = 728.0
+offset_bottom = 271.0
+
+[node name="BtnRight" type="Button" parent="."]
+layout_mode = 0
+offset_left = 573.0
+offset_top = 283.0
+offset_right = 622.0
+offset_bottom = 339.0
+
+[node name="BtnLeft" type="Button" parent="."]
+layout_mode = 0
+offset_left = 677.0
+offset_top = 289.0
+offset_right = 719.0
+offset_bottom = 333.0
+
+[node name="BtnReset" type="Button" parent="."]
+layout_mode = 0
+offset_left = 618.0
+offset_top = 353.0
+offset_right = 703.0
+offset_bottom = 432.0
+
+[node name="MainTimer" type="Timer" parent="."]
+
+[node name="MouseTimer" type="Timer" parent="."]
+wait_time = 0.15
