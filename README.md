@@ -4,7 +4,7 @@
 "Gred's Cake Quest" is a 2D arcade-style game where players control a character in an open environment, racing to collect cake pieces while avoiding a mischievous mouse. The game focuses on fast-paced gameplay, strategic movement, and fun, colorful graphics, inspired by classic arcade games like "Pac-Man" and "Bomberman."
 
 ## Game Objective
-Assist Gred in collecting scattered cake pieces across level while dodging obstacles, enhancing both the strategic and quick reflex skills of players.
+Assist Greg in collecting scattered cake pieces across level while dodging obstacles, enhancing both the strategic and quick reflex skills of players.
 
 ## Gameplay Mechanics
 - **Adventure and Exploration:** Guide Greg through a beautifully crafted environment.
