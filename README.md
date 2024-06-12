@@ -1,16 +1,17 @@
 # Greg's Cake Quest
 
 ## Description
-"Gred's Cake Quest" is an immersive game where players join Gred, a unique character, on his journey to collect cake pieces. Developed in the Godot Engine and scripted in C#, this game offers a combination of adventure, puzzle-solving, and strategy with a whimsical, engaging narrative.
+"Gred's Cake Quest" is a 2D arcade-style game where players control a character in an open environment, racing to collect cake pieces while avoiding a mischievous mouse. The game focuses on fast-paced gameplay, strategic movement, and fun, colorful graphics, inspired by classic arcade games like "Pac-Man" and "Bomberman."
 
 ## Game Objective
-Assist Gred in collecting scattered cake pieces across various levels while dodging obstacles and solving puzzles, enhancing both the strategic and quick reflex skills of players.
+Assist Gred in collecting scattered cake pieces across level while dodging obstacles, enhancing both the strategic and quick reflex skills of players.
 
 ## Gameplay Mechanics
-- **Adventure and Exploration:** Guide Gred through a series of diverse and beautifully crafted environments.
-- **Obstacle Navigation:** Overcome and strategize around obstacles and adversaries trying to thwart Gred’s cake-collecting mission.
-- **Cake Collection:** The primary goal for each level is to collect all the cake pieces.
-- **Scoring System:** Players earn points based on the number of cakes collected and the speed of level completion.
+- **Adventure and Exploration:** Guide Greg through a beautifully crafted environment.
+- **Obstacle Navigation:** Overcome and strategize around obstacles trying to complete Greg’s cake-collecting mission.
+- **Cake Collection:** The primary goal level is to collect all the cake pieces.
+- **Scoring System:** Players earn points based on the number of cakes collected.
+- **Avoiding the Mouse:** The mouse moves around the environment, attempting to eat the cake pieces before the player can collect them. The mouse follows a semi-random path, making it unpredictable and challenging to avoid.
 
 ## Visual and Audio
 - **Visual Style:** The game features vibrant, cartoon-style graphics created to be visually appealing and fun.

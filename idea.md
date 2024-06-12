@@ -1,27 +1,29 @@
-Game Idea: "Greg Game"
-Concept:
-"Greg Game" is a 2D top-down arcade-style game where players control a character in an open environment, racing to collect cake pieces while avoiding a mischievous mouse. The game focuses on fast-paced gameplay, strategic movement, and fun, colorful graphics, inspired by classic arcade games like "Pac-Man" and "Bomberman."
+# Game Idea: "Greg's Cake Quest"
+## Concept:
+"Greg's Cake Quest" is a 2D arcade-style game where players control a character in an open environment, racing to collect cake pieces while avoiding a mischievous mouse. The game focuses on fast-paced gameplay, strategic movement, and fun, colorful graphics, inspired by classic arcade games like "Pac-Man" and "Bomberman."
 
-Storyline:
+## Storyline:
 TO BE DONE
 
-Gameplay Mechanics:
+## Game Objective
+Assist Gred in collecting scattered cake pieces across level while dodging obstacles, enhancing both the strategic and quick reflex skills of players.
 
-Open Environment Exploration: Player navigate through an open environment filled with cake pieces. The goal is to collect all the pieces of cake scattered throughout the area.
+## Gameplay Mechanics:
+- **Adventure and Exploration:** Guide Greg through a beautifully crafted environment.
+- **Obstacle Navigation:** Overcome and strategize around obstacles trying to complete Greg’s cake-collecting mission.
+- **Cake Collection:** The primary goal level is to collect all the cake pieces.
+- **Scoring System:** Players earn points based on the number of cakes collected.
+- **Avoiding the Mouse:** The mouse moves around the environment, attempting to eat the cake pieces before the player can collect them. The mouse follows a semi-random path, making it unpredictable and challenging to avoid.
 
-Avoiding the Mouse: The mouse moves around the environment, attempting to eat the cake pieces before the player can collect them. The mouse follows a semi-random path, making it unpredictable and challenging to avoid.
+## Visual and Audio
+- **Visual Style:** The game features vibrant, cartoon-style graphics created to be visually appealing and fun.
+- **Sound Effects and Music:** Engaging soundtracks and sound effects are meticulously crafted to enhance gameplay, reflecting the playful theme of the game.
 
-Scoring and Progression: Player earn points for each cake piece collected and additional points for completing the game quickly.
+## Technologies Used
+- **Game Engine:** Developed using the Godot Engine, open-source game engine.
+- **Scripting Language:** Scripted in C#, providing robust programming capabilities for game development.
 
-Visual Style:
-The game features vibrant and colorful pixel art, with a playful and whimsical design.
-Characters and enemies have distinct, charming sprites.
-The environment is themed with various elements like candy land.
-
-Sound and Music:
-Upbeat, catchy music tracks accompany the gameplay, enhancing the fun and energetic atmosphere.
-Sound effects include cheerful chimes for collecting cake pieces, playful sounds for interactions, and amusing squeaks for the mouse.
-
-Team Members:
-Michal: Sound Design, Programming (mouse AI, environment layout), Scoring and Progression Mechanics, UI Improvements, Testing and Release Preparation.
-Roman:  UI Design,Programming (player controls, environment layout), Integration of art assets provided by Elena Rašková, Testing, and Release Preparation.
+## Team Members:
+- **Michal:** Sound Design, Programming (mouse AI, environment layout), Scoring and Progression Mechanics, UI Improvements, Testing and Release Preparation.
+- **Roman:**  UI Design,Programming (player controls, environment layout), Integration of art assets, Testing, and Release Preparation.
+- **Elena Rašková:** Art assets, Initial idea for game mechanics and character Greg, Testing.
