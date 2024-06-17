@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://cymi3vu0frj8o"]
 
 [ext_resource type="AudioStream" uid="uid://dw2ikdwdbbngo" path="res://Assets/sounds/background_music.mp3" id="1_ecq5s"]
+[ext_resource type="Script" path="res://Scripts/PieceCake.cs" id="2_c8gwa"]
 [ext_resource type="Texture2D" uid="uid://7gt7ytcfkrpw" path="res://Assets/food.png" id="2_r1cn8"]
-[ext_resource type="Texture2D" uid="uid://d2wftcw04g6ah" path="res://Assets/greg.jpeg" id="3_rxo21"]
 [ext_resource type="Script" path="res://Scripts/mouse.cs" id="4_kr1l7"]
 [ext_resource type="Texture2D" uid="uid://bddcov5rdprh" path="res://Assets/mouse.png" id="4_rjaoe"]
 
@@ -40,6 +40,7 @@ color = Color(0.972581, 0.699479, 0.733983, 1)
 
 [node name="PieceCake" type="Area2D" parent="."]
 position = Vector2(140, 0)
+script = ExtResource("2_c8gwa")
 
 [node name="TextureRect" type="TextureRect" parent="PieceCake"]
 offset_right = 70.0
@@ -62,7 +63,6 @@ region_rect = Rect2(0, 0, 70, 70)
 offset_right = 140.0
 offset_bottom = 140.0
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_rxo21")
 expand_mode = 3
 stretch_mode = 4
 
