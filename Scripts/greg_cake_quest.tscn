@@ -1,0 +1,92 @@
+[gd_scene load_steps=10 format=3 uid="uid://cymi3vu0frj8o"]
+
+[ext_resource type="AudioStream" uid="uid://dw2ikdwdbbngo" path="res://Assets/sounds/background_music.mp3" id="1_ecq5s"]
+[ext_resource type="Texture2D" uid="uid://7gt7ytcfkrpw" path="res://Assets/food.png" id="2_r1cn8"]
+[ext_resource type="Texture2D" uid="uid://d2wftcw04g6ah" path="res://Assets/greg.jpeg" id="3_rxo21"]
+[ext_resource type="Script" path="res://Scripts/mouse.cs" id="4_kr1l7"]
+[ext_resource type="Texture2D" uid="uid://bddcov5rdprh" path="res://Assets/mouse.png" id="4_rjaoe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcw8p"]
+size = Vector2(70, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsnnj"]
+size = Vector2(70, 70)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fa6nx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xfhj"]
+size = Vector2(70, 70)
+
+[node name="GregCakeQuest" type="Node2D"]
+
+[node name="BackgroundAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_ecq5s")
+autoplay = true
+
+[node name="CakeArea" type="ColorRect" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 700.0
+offset_right = 1100.0
+offset_bottom = 300.0
+grow_horizontal = 0
+color = Color(0.972581, 0.699479, 0.733983, 1)
+
+[node name="GameArea" type="ColorRect" parent="."]
+offset_right = 700.0
+offset_bottom = 700.0
+color = Color(0.972581, 0.699479, 0.733983, 1)
+
+[node name="PieceCake" type="Area2D" parent="."]
+position = Vector2(140, 0)
+
+[node name="TextureRect" type="TextureRect" parent="PieceCake"]
+offset_right = 70.0
+offset_bottom = 70.0
+texture = ExtResource("2_r1cn8")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PieceCake"]
+position = Vector2(35, 35)
+shape = SubResource("RectangleShape2D_mcw8p")
+
+[node name="Greg" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Greg"]
+region_enabled = true
+region_rect = Rect2(0, 0, 70, 70)
+
+[node name="TextureRect" type="TextureRect" parent="Greg/Sprite2D"]
+offset_right = 140.0
+offset_bottom = 140.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_rxo21")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Collision" type="CollisionShape2D" parent="Greg"]
+position = Vector2(35, 35)
+shape = SubResource("RectangleShape2D_jsnnj")
+
+[node name="Mouse" type="Area2D" parent="."]
+position = Vector2(70, 0)
+script = ExtResource("4_kr1l7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Mouse"]
+material = SubResource("CanvasItemMaterial_fa6nx")
+region_enabled = true
+region_rect = Rect2(0, 0, 70, 70)
+region_filter_clip_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="Mouse/Sprite2D"]
+offset_right = 70.0
+offset_bottom = 70.0
+texture = ExtResource("4_rjaoe")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Collision" type="CollisionShape2D" parent="Mouse"]
+position = Vector2(35, 35)
+shape = SubResource("RectangleShape2D_6xfhj")

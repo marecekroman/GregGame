@@ -88,24 +88,32 @@
     ]
   },
   "packageFolders": {
-    "/home/naith/.nuget/packages/": {}
+    "C:\\Users\\Roman\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/naith/dev/godot/GregCakeQuest/Greg-s Cake Quest.csproj",
+      "projectUniqueName": "C:\\Users\\Roman\\Desktop\\GregGame\\Greg-s Cake Quest.csproj",
       "projectName": "Greg-s Cake Quest",
-      "projectPath": "/home/naith/dev/godot/GregCakeQuest/Greg-s Cake Quest.csproj",
-      "packagesPath": "/home/naith/.nuget/packages/",
-      "outputPath": "/home/naith/dev/godot/GregCakeQuest/.godot/mono/temp/obj/",
+      "projectPath": "C:\\Users\\Roman\\Desktop\\GregGame\\Greg-s Cake Quest.csproj",
+      "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Roman\\Desktop\\GregGame\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/naith/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -118,6 +126,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -148,22 +161,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.30, 6.0.30]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.30, 6.0.30]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
