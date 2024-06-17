@@ -1,3 +1,6 @@
 ColorRect
+CollisionShape2D
+TextureRect
+Area2D
 AudioStreamPlayer
 Sprite2D
