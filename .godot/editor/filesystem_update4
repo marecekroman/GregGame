@@ -1,4 +1,2 @@
-res://Main.tscn
-res://Main.cs
-res://agilePlan.md
-res://idea.md
+res://greg_cake_quest.tscn
+res://Scripts/BackgroundAudio.cs

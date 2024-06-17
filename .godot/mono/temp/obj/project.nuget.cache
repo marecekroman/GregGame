@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8bzMqvhmtiEJjzCwcz06fMABPa/jlQsyThE4gTBdOUKF13igVMh+CMDCt5sfbDxXdR9VYTqHluz3W7V3sDB02w==",
+  "dgSpecHash": "6J2s/IErB1nDhNDLVQQcqvoZEPd5y7iMbD3/ZwqH/y/ZT9dYmCMkeKfSiIfnUgFWOSRjrWABDwePsebkFzxvmw==",
   "success": true,
-  "projectFilePath": "/home/naith/dev/godot/GregGame/GregGame.csproj",
+  "projectFilePath": "/home/naith/dev/godot/GregCakeQuest/Greg-s Cake Quest.csproj",
   "expectedPackageFiles": [
     "/home/naith/.nuget/packages/godot.sourcegenerators/4.2.1/godot.sourcegenerators.4.2.1.nupkg.sha512",
     "/home/naith/.nuget/packages/godotsharp/4.2.1/godotsharp.4.2.1.nupkg.sha512",

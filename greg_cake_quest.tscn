@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://p8m18i501tqp"]
+
+[ext_resource type="Texture2D" uid="uid://7gt7ytcfkrpw" path="res://Assets/food.png" id="1_ckf86"]
+[ext_resource type="Texture2D" uid="uid://bddcov5rdprh" path="res://Assets/mouse.png" id="2_phepj"]
+[ext_resource type="AudioStream" uid="uid://dw2ikdwdbbngo" path="res://Assets/sounds/background_music.mp3" id="3_8bac3"]
+[ext_resource type="Script" path="res://Scripts/BackgroundAudio.cs" id="4_6n1gd"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fa6nx"]
+
+[node name="GregCakeQuest" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+light_mask = 512
+visibility_layer = 512
+offset_left = -6.0
+offset_top = -7.0
+offset_right = 1157.0
+offset_bottom = 653.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.972549, 0.698039, 0.733333, 1)
+
+[node name="CakePiece" type="Sprite2D" parent="."]
+position = Vector2(195, 87)
+texture = ExtResource("1_ckf86")
+
+[node name="Mouse" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_fa6nx")
+position = Vector2(94, 85)
+texture = ExtResource("2_phepj")
+
+[node name="Greg" type="Sprite2D" parent="."]
+
+[node name="BackgroundAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_8bac3")
+autoplay = true
+script = ExtResource("4_6n1gd")

@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/naith/dev/godot/GregGame/GregGame.csproj",
-      "projectName": "GregGame",
-      "projectPath": "/home/naith/dev/godot/GregGame/GregGame.csproj",
+      "projectUniqueName": "/home/naith/dev/godot/GregCakeQuest/Greg-s Cake Quest.csproj",
+      "projectName": "Greg-s Cake Quest",
+      "projectPath": "/home/naith/dev/godot/GregCakeQuest/Greg-s Cake Quest.csproj",
       "packagesPath": "/home/naith/.nuget/packages/",
-      "outputPath": "/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/",
+      "outputPath": "/home/naith/dev/godot/GregCakeQuest/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/naith/.nuget/NuGet/NuGet.Config"
