@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "NGJSfB812uI=",
+  "dgSpecHash": "8bzMqvhmtiEJjzCwcz06fMABPa/jlQsyThE4gTBdOUKF13igVMh+CMDCt5sfbDxXdR9VYTqHluz3W7V3sDB02w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Roman\\Desktop\\GregGame\\GregGame.csproj",
+  "projectFilePath": "/home/naith/dev/godot/GregGame/GregGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Roman\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
-    "C:\\Users\\Roman\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
-    "C:\\Users\\Roman\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
+    "/home/naith/.nuget/packages/godot.sourcegenerators/4.2.1/godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "/home/naith/.nuget/packages/godotsharp/4.2.1/godotsharp.4.2.1.nupkg.sha512",
+    "/home/naith/.nuget/packages/godotsharpeditor/4.2.1/godotsharpeditor.4.2.1.nupkg.sha512",
+    "/home/naith/.nuget/packages/microsoft.netcore.app.ref/6.0.30/microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
+    "/home/naith/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.30/microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512"
   ],
   "logs": []
 }
