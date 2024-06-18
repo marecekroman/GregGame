@@ -4,18 +4,58 @@ using System.Drawing;
 
 public partial class Greg : Area2D{
     // Called when the node enters the scene tree for the first time.
-    private Control gameArea;
+    private Control _gameArea;
     private double _time = 0;
-    private int _direction = 0;
+    private Vector2 _direction = new Vector2(0, 0);
+    private Vector2 _newPosition = new Vector2(0, 0);
+    private float _speed = 500;
 
     public override void _Ready() {
-        gameArea = GetNode<Control>("/root/GregCakeQuest/GameArea");
+        _gameArea = GetNode<Control>("/root/GregCakeQuest/GameArea");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta) {
         if (GregCakeQuest.IsGameRunning() == false)
             return;
+
+        // Animation - add movement between two points
+        var actualPosition = Position + _direction * (float)delta * _speed;
+
+        if (actualPosition.X < 0 || actualPosition.Y < 0 || actualPosition.X >= _gameArea.Size.X - 70 ||
+            actualPosition.Y >= _gameArea.Size.Y - 70)
+            return;
+
+        if (checkTileBoundary(_newPosition)) {
+            Position = actualPosition;
+        }
+    }
+
+    private bool checkTileBoundary(Vector2 target) {
+        bool stop = true;
+        // horizontal boundary
+        if (_direction.X != 0) {
+            if (_direction.X > 0) {
+                if (Position.X >= target.X)
+                    stop = false;
+            }
+            else {
+                if (Position.X <= target.X)
+                    stop = false;
+            }
+        }
+        else if (_direction.Y != 0) {
+            if (_direction.Y > 0) {
+                if (Position.Y >= target.Y)
+                    stop = false;
+            }
+            else {
+                if (Position.Y <= target.Y)
+                    stop = false;
+            }
+        }
+
+        return stop;
     }
 
     public override void _Input(InputEvent @event) {
@@ -23,27 +63,27 @@ public partial class Greg : Area2D{
             return;
 
         if (@event.IsActionPressed("ui_left")) {
-            GD.Print($"Greg move LEFT: X = {Position.X}, Y = {Position.Y}");
             if (Position.X > 0) {
-                Position = new Vector2(Position.X - 70, Position.Y);
+                _newPosition = new Vector2(Position.X - 70, Position.Y);
+                _direction = new Vector2(-1, 0);
             }
         }
         else if (@event.IsActionPressed("ui_right")) {
-            GD.Print($"Greg move RIGHT: X = {Position.X}, Y = {Position.Y}");
-            if (Position.X < gameArea.Size.X - 70) {
-                Position = new Vector2(Position.X + 70, Position.Y);
+            if (Position.X < _gameArea.Size.X - 70) {
+                _newPosition = new Vector2(Position.X + 70, Position.Y);
+                _direction = new Vector2(1, 0);
             }
         }
         else if (@event.IsActionPressed("ui_up")) {
-            GD.Print($"Greg move UP: X = {Position.X}, Y = {Position.Y}");
             if (Position.Y > 0) {
-                Position = new Vector2(Position.X, Position.Y - 70);
+                _newPosition = new Vector2(Position.X, Position.Y - 70);
+                _direction = new Vector2(0, -1);
             }
         }
         else if (@event.IsActionPressed("ui_down")) {
-            GD.Print($"Greg move DOWN: X = {Position.X}, Y = {Position.Y}");
-            if (Position.Y < gameArea.Size.Y - 70) {
-                Position = new Vector2(Position.X, Position.Y + 70);
+            if (Position.Y < _gameArea.Size.Y - 70) {
+                _newPosition = new Vector2(Position.X, Position.Y + 70);
+                _direction = new Vector2(0, 1);
             }
         }
     }

@@ -13,7 +13,7 @@ config_version=5
 config/name="Greg's Cake Quest"
 run/main_scene="res://Scripts/greg_cake_quest.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Assets/images/Untitled_Artwork59.png"
 
 [display]
 

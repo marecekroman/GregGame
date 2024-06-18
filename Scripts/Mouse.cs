@@ -6,15 +6,15 @@ public partial class Mouse : Area2D{
 
     private double _speed = SpawnTimer;
     private double _moveTimer = 0;
-    private int _countModeCycle = 5;
+    private int _countModeCycle;
 
     private Area2D _pieceCake;
     private Area2D _greg;
 
     private Vector2 _deltaMove;
 
-    // 0 - random spawn, 1 - hunting player, 2 - hunting cake
-    private int _mouseMode = 2;
+    // 0 - hunting player, 1 - hunting cake
+    private int _mouseMode;
 
     private RandomNumberGenerator _randomNumberGenerator = new RandomNumberGenerator();
 
@@ -22,6 +22,8 @@ public partial class Mouse : Area2D{
     public override void _Ready() {
         _pieceCake = GetNode<Area2D>("../PieceCake");
         _greg = GetNode<Area2D>("../Greg");
+        _mouseMode = _randomNumberGenerator.RandiRange(0, 1);
+        _countModeCycle = _randomNumberGenerator.RandiRange(1, 4);
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -30,27 +32,15 @@ public partial class Mouse : Area2D{
             return;
 
         if (_countModeCycle < 0) {
-            _mouseMode += 1;
-            if (_mouseMode > 2)
-                _mouseMode = 0;
-            GD.Print($"Mouse mode selected: {_mouseMode}");
-            if (_mouseMode != 0)
-                _countModeCycle = _randomNumberGenerator.RandiRange(1, 4);
-            else {
-                _countModeCycle = 1;
-            }
-
-            GD.Print($"Mouse mode count : {_countModeCycle}");
+            _mouseMode = _randomNumberGenerator.RandiRange(0, 1);
+            _countModeCycle = _randomNumberGenerator.RandiRange(1, 4);
         }
 
-        if (_mouseMode == 2) {
+        if (_mouseMode == 1) {
             _HuntingCake(delta);
         }
-        else if (_mouseMode == 1) {
+        else if (_mouseMode == 0) {
             _HuntingPlayer(delta);
-        }
-        else {
-            _RandomSpawn(delta);
         }
     }
 
@@ -76,7 +66,7 @@ public partial class Mouse : Area2D{
     // Mouse hunting player
     private void _HuntingPlayer(double delta) {
         _moveTimer += delta;
-        if (_pieceCake.Visible && _greg.Visible && _moveTimer > MoveTimer) {
+        if (_greg.Visible && _moveTimer > MoveTimer) {
             Visible = true;
             _deltaMove = new Vector2(
                     _greg.Position.X - Position.X,
@@ -88,7 +78,7 @@ public partial class Mouse : Area2D{
         }
     }
 
-    // Mouse random spawn
+    /*// Mouse random spawn
     private void _RandomSpawn(double delta) {
         if (_speed < 0.0f) {
             Visible = true;
@@ -100,7 +90,7 @@ public partial class Mouse : Area2D{
         }
 
         _speed -= delta;
-    }
+    }*/
 
     // Called when the node enters the area.
     public void Reset() {
