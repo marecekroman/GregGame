@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cymi3vu0frj8o"]
+[gd_scene load_steps=11 format=3 uid="uid://cymi3vu0frj8o"]
 
 [ext_resource type="AudioStream" uid="uid://dw2ikdwdbbngo" path="res://Assets/sounds/background_music.mp3" id="1_ecq5s"]
 [ext_resource type="Script" path="res://Scripts/PieceCake.cs" id="2_c8gwa"]
 [ext_resource type="Texture2D" uid="uid://7gt7ytcfkrpw" path="res://Assets/food.png" id="2_r1cn8"]
-[ext_resource type="Script" path="res://Scripts/mouse.cs" id="4_kr1l7"]
+[ext_resource type="Script" path="res://Scripts/Greg.cs" id="4_ei0jm"]
 [ext_resource type="Texture2D" uid="uid://bddcov5rdprh" path="res://Assets/mouse.png" id="4_rjaoe"]
+[ext_resource type="Script" path="res://Scripts/Mouse.cs" id="5_6e6tj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mcw8p"]
 size = Vector2(70, 70)
@@ -54,6 +55,7 @@ position = Vector2(35, 35)
 shape = SubResource("RectangleShape2D_mcw8p")
 
 [node name="Greg" type="Area2D" parent="."]
+script = ExtResource("4_ei0jm")
 
 [node name="Sprite2D" type="Sprite2D" parent="Greg"]
 region_enabled = true
@@ -72,7 +74,7 @@ shape = SubResource("RectangleShape2D_jsnnj")
 
 [node name="Mouse" type="Area2D" parent="."]
 position = Vector2(70, 0)
-script = ExtResource("4_kr1l7")
+script = ExtResource("5_6e6tj")
 
 [node name="Sprite2D" type="Sprite2D" parent="Mouse"]
 material = SubResource("CanvasItemMaterial_fa6nx")
@@ -90,3 +92,6 @@ offset_bottom = 70.0
 texture = ExtResource("4_rjaoe")
 expand_mode = 3
 stretch_mode = 4
+
+[connection signal="area_entered" from="PieceCake" to="PieceCake" method="_on_area_entered"]
+[connection signal="area_entered" from="Greg" to="Greg" method="_greg_area_entered"]
