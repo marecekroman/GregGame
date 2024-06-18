@@ -1,6 +1,13 @@
-ColorRect
-CollisionShape2D
-TextureRect
-Area2D
+AudioStreamPlayer2D
 AudioStreamPlayer
+TextureRect
+Button
+Label
+TextureButton
+ColorRect
+TileMap
+NinePatchRect
+ProgressBar
+CollisionShape2D
+Area2D
 Sprite2D

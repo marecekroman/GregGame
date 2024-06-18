@@ -16,39 +16,21 @@
 /home/naith/dev/godot/GregCakeQuest/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.genruntimeconfig.cache
 /home/naith/dev/godot/GregCakeQuest/.godot/mono/temp/obj/Debug/ref/Greg-s Cake Quest.dll
 /home/naith/dev/godot/GregCakeQuest/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.csproj.AssemblyReference.cache
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.GeneratedMSBuildEditorConfig.editorconfig
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.AssemblyInfoInputs.cache
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.AssemblyInfo.cs
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.csproj.CoreCompileInputs.cache
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.sourcelink.json
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.dll
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/refint/Greg-s Cake Quest.dll
-/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.pdb
 /home/naith/dev/godot/GregGame/.godot/mono/temp/bin/Debug/Greg-s Cake Quest.deps.json
 /home/naith/dev/godot/GregGame/.godot/mono/temp/bin/Debug/Greg-s Cake Quest.runtimeconfig.json
 /home/naith/dev/godot/GregGame/.godot/mono/temp/bin/Debug/Greg-s Cake Quest.dll
 /home/naith/dev/godot/GregGame/.godot/mono/temp/bin/Debug/Greg-s Cake Quest.pdb
 /home/naith/dev/godot/GregGame/.godot/mono/temp/bin/Debug/GodotSharp.dll
 /home/naith/dev/godot/GregGame/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.csproj.AssemblyReference.cache
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.GeneratedMSBuildEditorConfig.editorconfig
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.AssemblyInfoInputs.cache
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.AssemblyInfo.cs
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.csproj.CoreCompileInputs.cache
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.sourcelink.json
 /home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.csproj.CopyComplete
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.dll
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/refint/Greg-s Cake Quest.dll
+/home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.pdb
 /home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/Greg-s Cake Quest.genruntimeconfig.cache
 /home/naith/dev/godot/GregGame/.godot/mono/temp/obj/Debug/ref/Greg-s Cake Quest.dll
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\bin\Debug\Greg-s Cake Quest.deps.json
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\bin\Debug\Greg-s Cake Quest.runtimeconfig.json
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\bin\Debug\Greg-s Cake Quest.dll
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\bin\Debug\Greg-s Cake Quest.pdb
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\bin\Debug\GodotSharp.dll
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.csproj.AssemblyReference.cache
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.AssemblyInfoInputs.cache
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.AssemblyInfo.cs
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.csproj.CoreCompileInputs.cache
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.sourcelink.json
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s C.C0EA33CC.Up2Date
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.dll
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\refint\Greg-s Cake Quest.dll
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.pdb
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\Greg-s Cake Quest.genruntimeconfig.cache
-C:\Users\Roman\Desktop\GregGame\.godot\mono\temp\obj\Debug\ref\Greg-s Cake Quest.dll
