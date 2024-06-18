@@ -2,7 +2,10 @@ using Godot;
 
 public partial class Mouse : Area2D{
 	private const double SpawnTimer = 1.0f;
+	private const double MoveTimer = 0.6f;
+
 	private double _speed = SpawnTimer;
+	private double _moveTimer = 0;
 	private int _countModeCycle = 5;
 
 	private Area2D _pieceCake;
@@ -38,10 +41,10 @@ public partial class Mouse : Area2D{
 		}
 
 		if (_mouseMode == 2) {
-			_HuntingCake();
+			_HuntingCake(delta);
 		}
 		else if (_mouseMode == 1) {
-			_HuntingPlayer();
+			_HuntingPlayer(delta);
 		}
 		else {
 			_RandomSpawn(delta);
@@ -53,15 +56,32 @@ public partial class Mouse : Area2D{
 	}
 
 	//Mouse hunting cake
-	private void _HuntingCake() {
-		if (_pieceCake.Visible) {
+	private void _HuntingCake(double delta) {
+		_moveTimer += delta;
+		if (_pieceCake.Visible && _moveTimer > MoveTimer) {
 			Visible = true;
 			_deltaMove = new Vector2(
 					_pieceCake.Position.X - Position.X,
 					_pieceCake.Position.Y - Position.Y)
 				.Normalized();
 
-			Position += _deltaMove * 2.0f;
+			Position += _deltaMove * 70;
+			_moveTimer = 0;
+		}
+	}
+
+	// Mouse hunting player
+	private void _HuntingPlayer(double delta) {
+		_moveTimer += delta;
+		if (_pieceCake.Visible && _greg.Visible && _moveTimer > MoveTimer) {
+			Visible = true;
+			_deltaMove = new Vector2(
+					_greg.Position.X - Position.X,
+					_greg.Position.Y - Position.Y)
+				.Normalized();
+
+			Position += _deltaMove * 70;
+			_moveTimer = 0;
 		}
 	}
 
@@ -79,24 +99,12 @@ public partial class Mouse : Area2D{
 		_speed -= delta;
 	}
 
-	// Mouse hunting player
-	private void _HuntingPlayer() {
-		if (_pieceCake.Visible) {
-			Visible = true;
-			_deltaMove = new Vector2(
-					_greg.Position.X - Position.X,
-					_greg.Position.Y - Position.Y)
-				.Normalized();
-
-			Position += _deltaMove * 2.0f;
-		}
-	}
 
 	// Called when the node enters the area.
 	public void Reset() {
 		Visible = false;
 		_countModeCycle--;
-		// set new random position
+		// set new random position after reset
 		var deltaX = _randomNumberGenerator.RandfRange(0.0f, 9.0f);
 		var deltaY = _randomNumberGenerator.RandfRange(0.0f, 9.0f);
 		Position = new Vector2(deltaX * 70.0f, deltaY * 70.0f);

@@ -1,1 +1,5 @@
 res://Scripts/greg_cake_quest.tscn
+res://Scripts/Greg.cs
+res://Scripts/GregCakeQuest.cs
+res://Scripts/Mouse.cs
+res://Scripts/PieceCake.cs

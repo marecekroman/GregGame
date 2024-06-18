@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cymi3vu0frj8o"]
+[gd_scene load_steps=12 format=3 uid="uid://cymi3vu0frj8o"]
 
+[ext_resource type="Script" path="res://Scripts/GregCakeQuest.cs" id="1_4rnmf"]
 [ext_resource type="AudioStream" uid="uid://dw2ikdwdbbngo" path="res://Assets/sounds/background_music.mp3" id="1_ecq5s"]
 [ext_resource type="Script" path="res://Scripts/PieceCake.cs" id="2_c8gwa"]
 [ext_resource type="Texture2D" uid="uid://7gt7ytcfkrpw" path="res://Assets/food.png" id="2_r1cn8"]
@@ -7,32 +8,112 @@
 [ext_resource type="Texture2D" uid="uid://bddcov5rdprh" path="res://Assets/mouse.png" id="4_rjaoe"]
 [ext_resource type="Script" path="res://Scripts/Mouse.cs" id="5_6e6tj"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_j4teo"]
+font_size = 29
+shadow_size = 5
+shadow_color = Color(0.0784314, 0.0784314, 0.0784314, 0.768627)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mcw8p"]
 size = Vector2(70, 70)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsnnj"]
 size = Vector2(70, 70)
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fa6nx"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6xfhj"]
 size = Vector2(70, 70)
 
 [node name="GregCakeQuest" type="Node2D"]
+script = ExtResource("1_4rnmf")
 
 [node name="BackgroundAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_ecq5s")
-autoplay = true
+volume_db = -24.389
 
 [node name="CakeArea" type="ColorRect" parent="."]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 700.0
+offset_left = 711.0
 offset_right = 1100.0
 offset_bottom = 300.0
 grow_horizontal = 0
 color = Color(0.972581, 0.699479, 0.733983, 1)
+
+[node name="ProgressBar" type="ProgressBar" parent="CakeArea"]
+modulate = Color(0.552941, 0, 0.137255, 1)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -27.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="labelMouseCatch" type="Label" parent="CakeArea"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -71.0
+offset_right = 109.0
+offset_bottom = -31.0
+grow_vertical = 0
+text = "Mouse Catch"
+vertical_alignment = 1
+
+[node name="labelGregCatch" type="Label" parent="CakeArea"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -71.0
+offset_right = -12.0
+offset_bottom = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Greg Catch"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="labelMouseCounter" type="Label" parent="CakeArea"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -68.0
+offset_right = 169.0
+offset_bottom = -31.0
+grow_vertical = 0
+text = "0"
+label_settings = SubResource("LabelSettings_j4teo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="labelGregCounter" type="Label" parent="CakeArea"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -156.0
+offset_top = -71.0
+offset_right = -100.0
+offset_bottom = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "0"
+label_settings = SubResource("LabelSettings_j4teo")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="GameArea" type="ColorRect" parent="."]
 offset_right = 700.0
@@ -75,12 +156,6 @@ shape = SubResource("RectangleShape2D_jsnnj")
 [node name="Mouse" type="Area2D" parent="."]
 position = Vector2(70, 0)
 script = ExtResource("5_6e6tj")
-
-[node name="Sprite2D" type="Sprite2D" parent="Mouse"]
-material = SubResource("CanvasItemMaterial_fa6nx")
-region_enabled = true
-region_rect = Rect2(0, 0, 70, 70)
-region_filter_clip_enabled = true
 
 [node name="Collision" type="CollisionShape2D" parent="Mouse"]
 position = Vector2(35, 35)

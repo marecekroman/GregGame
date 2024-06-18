@@ -5,6 +5,7 @@ public partial class PieceCake : Area2D{
 	private const double spawnTimer = 2.0f;
 
 	private Control gameArea;
+	private Node2D gregCakeQuest;
 	private double speed = spawnTimer;
 	private RandomNumberGenerator rndGenerator = new RandomNumberGenerator();
 
@@ -33,13 +34,15 @@ public partial class PieceCake : Area2D{
 			mouse.Reset();
 			speed = spawnTimer;
 			Visible = false;
-			GD.Print($"Mouse Cake: X = {Position.X}, Y = {Position.Y}");
+			GD.Print($"Mouse catch Cake: X = {Position.X}, Y = {Position.Y}");
+			GregCakeQuest.UpdateMouseCounter();
 		}
 
 		// Greg collect piece of cake
 		if (area is Greg greg) {
 			Visible = false;
 			GD.Print($"Greg catch Cake: X = {greg.Position.X}, Y = {greg.Position.Y}");
+			GregCakeQuest.UpdateGregCounter();
 		}
 	}
 }
