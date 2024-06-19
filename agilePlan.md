@@ -28,8 +28,8 @@
 - **Estimated Time: 2 days**
 - **Status: Done**
 
-# Game Timer Implementation
-- **Description: Implement main game timer and mouse timer functionalities.**
+# Game Timing Implementation
+- **Description: Implement game timing functionalities.**
 - **Assigned to: Roman**
 - **Estimated Time: 1 day**
 - **Status: Done**
@@ -101,7 +101,7 @@
 # Roman:
 - **Game Setup and UI Initialization**
 - **Player Movement and Input Handling**
-- **Game Timer Implementation**
+- **Game Timing Implementation**
 - **Game Over Conditions**
 - **Bug Fixes and Optimization**
 - **Project Presentation Preparation**
