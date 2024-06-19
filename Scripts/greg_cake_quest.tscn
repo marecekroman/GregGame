@@ -230,7 +230,7 @@ action_mode = 0
 text = "DOWN
 "
 
-[node name="buttonDown2" type="Button" parent="ControlArea"]
+[node name="buttonRight" type="Button" parent="ControlArea"]
 layout_mode = 0
 offset_left = 245.0
 offset_top = 147.0
@@ -250,7 +250,7 @@ action_mode = 0
 text = "RIGHT
 "
 
-[node name="buttonDown3" type="Button" parent="ControlArea"]
+[node name="buttonLeft" type="Button" parent="ControlArea"]
 layout_mode = 0
 offset_left = 21.0
 offset_top = 147.0
@@ -431,3 +431,7 @@ stretch_mode = 6
 [connection signal="area_entered" from="GameArea/PieceCake" to="GameArea/PieceCake" method="_on_area_entered"]
 [connection signal="area_entered" from="GameArea/Greg" to="GameArea/Greg" method="_greg_area_entered"]
 [connection signal="pressed" from="ControlArea/buttonStartStop" to="ControlArea/buttonStartStop" method="_on_pressed"]
+[connection signal="pressed" from="ControlArea/buttonUp" to="GameArea/Greg" method="_on_button_up_pressed"]
+[connection signal="pressed" from="ControlArea/buttonDown" to="GameArea/Greg" method="_on_button_down_pressed"]
+[connection signal="pressed" from="ControlArea/buttonRight" to="GameArea/Greg" method="_on_button_right_pressed"]
+[connection signal="pressed" from="ControlArea/buttonLeft" to="GameArea/Greg" method="_on_button_left_pressed"]

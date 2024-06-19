@@ -1,11 +1,1 @@
 res://Scripts/greg_cake_quest.tscn
-res://Scripts/GregCakeQuest.cs
-res://Scripts/BackgroundAudio.cs
-res://Scripts/ButtonStartStop.cs
-res://Scripts/Greg.cs
-res://Scripts/GregWin.cs
-res://Scripts/LooseGame.cs
-res://Scripts/Mouse.cs
-res://Scripts/MouseWin.cs
-res://Scripts/PieceCake.cs
-res://Scripts/WinGame.cs

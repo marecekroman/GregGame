@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718793218
+::res://::1718794463
 agilePlan.md::TextFile::-1::1718793027::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1718793027::0::1::::<><>::
 icon.svg::CompressedTexture2D::7620380240281610036::1718793027::1718793027::1::::<><>::
@@ -48,13 +48,13 @@ sad-violin-[hq]-made-with-Voicemod.mp3::AudioStreamMP3::6078585292229755330::171
 sinister-laugh-140131.mp3::AudioStreamMP3::2114116487087572370::1718793027::1718793027::1::::<><>::
 surprise.mp3::AudioStreamMP3::2604155851605409528::1718793027::1718793027::1::::<><>::
 worlds-smallest-violin-made-with-Voicemod.mp3::AudioStreamMP3::3858894637802176583::1718793027::1718793027::1::::<><>::
-::res://Scripts/::1718793162
+::res://Scripts/::1718794276
 BackgroundAudio.cs::CSharpScript::-1::1718793027::0::1::::<>AudioStreamPlayer<>::
 ButtonStartStop.cs::CSharpScript::-1::1718793027::0::1::::<>Button<>::
-Greg.cs::CSharpScript::-1::1718793027::0::1::::<>Area2D<>::
-GregCakeQuest.cs::CSharpScript::-1::1718741085::0::1::::<>Node2D<>::
+Greg.cs::CSharpScript::-1::1718794053::0::1::::<>Area2D<>::
+GregCakeQuest.cs::CSharpScript::-1::1718793252::0::1::::<>Node2D<>::
 GregWin.cs::CSharpScript::-1::1718793027::0::1::::<>TextureRect<>::
-greg_cake_quest.tscn::PackedScene::6482683020948853772::1718793027::0::1::::<><>::res://Scripts/GregCakeQuest.cs<>uid://dw2ikdwdbbngo::::res://Assets/sounds/background_music.mp3<>res://Scripts/PieceCake.cs<>uid://7gt7ytcfkrpw::::res://Assets/images/food.png<>res://Scripts/BackgroundAudio.cs<>res://Scripts/Greg.cs<>uid://bddcov5rdprh::::res://Assets/images/mouse.png<>res://Scripts/Mouse.cs<>uid://c2dkffnw3h21s::::res://Assets/images/Untitled_Artwork59.png<>uid://d2bmdfiwihp1q::::res://Assets/images/slice_0.png<>uid://bted2mldfyonx::::res://Assets/images/uWin.png<>res://Scripts/GregWin.cs<>uid://7hmf1jt0lx2c::::res://Assets/images/uLose.png<>res://Scripts/MouseWin.cs<>uid://bc70xcrq0utgn::::res://Assets/sounds/clapping-music-for-typographic-video-version-2-112975.mp3<>res://Scripts/WinGame.cs<>res://Scripts/LooseGame.cs<>uid://bu8jowd247dvb::::res://Assets/sounds/worlds-smallest-violin-made-with-Voicemod.mp3<>uid://b2td2oca2eyyk::::res://Assets/greg_cake_quest_buttons.tres<>res://Scripts/ButtonStartStop.cs<>uid://dxuuwdtqlo4xc::::res://Assets/fonts/LibreBaskerville-Bold.ttf<>uid://bihrj08qn5422::::res://Assets/fonts/ConcertOne-Regular.ttf
+greg_cake_quest.tscn::PackedScene::6482683020948853772::1718794276::0::1::::<><>::res://Scripts/GregCakeQuest.cs<>uid://dw2ikdwdbbngo::::res://Assets/sounds/background_music.mp3<>res://Scripts/PieceCake.cs<>uid://7gt7ytcfkrpw::::res://Assets/images/food.png<>res://Scripts/BackgroundAudio.cs<>res://Scripts/Greg.cs<>uid://bddcov5rdprh::::res://Assets/images/mouse.png<>res://Scripts/Mouse.cs<>uid://c2dkffnw3h21s::::res://Assets/images/Untitled_Artwork59.png<>uid://d2bmdfiwihp1q::::res://Assets/images/slice_0.png<>uid://bted2mldfyonx::::res://Assets/images/uWin.png<>res://Scripts/GregWin.cs<>uid://7hmf1jt0lx2c::::res://Assets/images/uLose.png<>res://Scripts/MouseWin.cs<>uid://bc70xcrq0utgn::::res://Assets/sounds/clapping-music-for-typographic-video-version-2-112975.mp3<>res://Scripts/WinGame.cs<>res://Scripts/LooseGame.cs<>uid://bu8jowd247dvb::::res://Assets/sounds/worlds-smallest-violin-made-with-Voicemod.mp3<>uid://b2td2oca2eyyk::::res://Assets/greg_cake_quest_buttons.tres<>res://Scripts/ButtonStartStop.cs<>uid://dxuuwdtqlo4xc::::res://Assets/fonts/LibreBaskerville-Bold.ttf<>uid://bihrj08qn5422::::res://Assets/fonts/ConcertOne-Regular.ttf
 LooseGame.cs::CSharpScript::-1::1718793027::0::1::::<>AudioStreamPlayer<>::
 Mouse.cs::CSharpScript::-1::1718793027::0::1::::<>Area2D<>::
 MouseWin.cs::CSharpScript::-1::1718793027::0::1::::<>TextureRect<>::
