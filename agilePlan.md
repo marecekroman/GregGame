@@ -38,19 +38,19 @@
 - **Description: Implement collision detection between player, food, and mouse.**
 - **Assigned to: Michal**
 - **Estimated Time: 1 day**
-- **Status: Pending**
+- **Status: Done**
 
 # Basic Game Logic
 - **Description: Implement logic for collecting food and mouse interactions.**
 - **Assigned to: Michal**
 - **Estimated Time: 2 days**
-- **Status: Pending**
+- **Status: Done**
 
 # Sound Design
 - **Description: Develop and integrate sound effects for collecting cake pieces, interactions, and mouse squeaks.**
 - **Assigned to: Michal**
 - **Estimated Time: 2 days**
-- **Status: Pending**
+- **Status: Done**
 
 # Review & Retrospective (14.06.2024)
 - **Review: Test the basic game functionalities.**
@@ -63,38 +63,37 @@
 - **Description: Implement visual representation of the cake increasing and decreasing based on player and mouse actions.**
 - **Assigned to: Michal**
 - **Estimated Time: 2 days**
-- **Status: Pending**
+- **Status: Done**
 
 # Game Over Conditions
 - **Description: Implement victory and loss conditions with appropriate visual feedback.**
 - **Assigned to: Roman**
 - **Estimated Time: 1 day**
-- **Status: Pending**
-- **UI Improvements**
+- **Status: Done**
 
 # Description: Improve the user interface, including button visuals and cake display.
 - **Assigned to: Michal**
 - **Estimated Time: 2 days**
-- **Status: Pending**
+- **Status: Done**
 
 # Bug Fixes and Optimization
 - **Description: Identify and fix any bugs, optimize code for better performance.**
 - **Assigned to: Roman**
 - **Estimated Time: 2 days**
-- **Status: Pending**
+- **Status: Done**
 
 # Final Testing and Polishing
 - **Description: Conduct thorough testing, polish the game, and prepare for release.**
 - **Assigned to: Both**
 - **Estimated Time: 1 day**
-- **Status: Pending**
+- **Status: Done**
 
 # Description: Create a PowerPoint presentation summarizing the project, development process, and key features of the game.
 - **Assigned to: Both**
 - **Estimated Time: 1 day**
-- **Status: Pending**
+- **Status: Open**
 
-# Review & Retrospective (22.06.2024)
+# Review & Retrospective (21.06.2024)
 - **Review: Final testing and demonstration of the complete game.**
 - **Retrospective: Discuss overall project performance and areas for future improvement.**
 
