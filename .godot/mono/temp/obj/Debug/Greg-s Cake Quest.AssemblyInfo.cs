@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Greg-s Cake Quest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fde128e386b286d15d9e4fa3ca841eb85106e61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f87587f9e0e3583f7b7ad8e816aa74031438ab5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Greg-s Cake Quest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Greg-s Cake Quest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

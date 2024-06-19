@@ -8,7 +8,7 @@ public partial class GregCakeQuest : Node2D{
 	private static int _gregCounter = 0;
 	private static int _mouseCounter = 0;
 	public static int MaxGregCakes = 8;
-	public static int MaxMouseCakes = 6;
+	public static int MaxMouseCakes = 8;
 
 	//  Game status
 	private static bool _isGameRunning = true;
