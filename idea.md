@@ -11,7 +11,11 @@ Assist Greg in collecting scattered cake pieces across level while dodging mouse
 ## Gameplay Mechanics:
 - **Cake Collection:** The primary goal level is to collect all the cake pieces.
 - **Scoring System:** Players earn points based on the number of cakes collected.
-- **Avoiding the Mouse:** The mouse moves around the environment, attempting to eat the cake pieces before the player can collect them. The have three modes that follows a semi-random path, making it unpredictable and challenging to avoid.
+- **Avoiding the Mouse:** The mouse moves around the environment in two modes.
+In the first mode, the mouse tries to eat the pieces of cake before the player can collect them.
+In the second mode, the mouse tries to steal the cake from the player; if it succeeds, one piece of cake disappears from the player's plate.
+The mode switching is random, after a random number of successful attempts by the mouse to pick up the cake, or to pick it up from the player.
+Along with the cake appearing in the board through a random process, the process makes the game more challenging.
 
 ## Visual and Audio
 - **Visual Style:** The game features vibrant, cartoon-style graphics created to be visually appealing and fun.
