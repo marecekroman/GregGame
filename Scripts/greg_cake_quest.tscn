@@ -1,29 +1,52 @@
-[gd_scene load_steps=31 format=3 uid="uid://cymi3vu0frj8o"]
+[gd_scene load_steps=54 format=3 uid="uid://cymi3vu0frj8o"]
 
 [ext_resource type="Script" path="res://Scripts/GregCakeQuest.cs" id="1_4rnmf"]
-[ext_resource type="AudioStream" uid="uid://dw2ikdwdbbngo" path="res://Assets/sounds/background_music.mp3" id="1_ecq5s"]
+[ext_resource type="AudioStream" uid="uid://dsbu54jocptu2" path="res://Assets/sounds/background_music.mp3" id="1_ecq5s"]
 [ext_resource type="Script" path="res://Scripts/PieceCake.cs" id="2_c8gwa"]
-[ext_resource type="Texture2D" uid="uid://7gt7ytcfkrpw" path="res://Assets/images/food.png" id="2_r1cn8"]
+[ext_resource type="Texture2D" uid="uid://oi517xo0sc54" path="res://Assets/images/food.png" id="2_r1cn8"]
 [ext_resource type="Script" path="res://Scripts/BackgroundAudio.cs" id="3_gt5mi"]
 [ext_resource type="Script" path="res://Scripts/Greg.cs" id="4_ei0jm"]
-[ext_resource type="Texture2D" uid="uid://bddcov5rdprh" path="res://Assets/images/mouse.png" id="4_rjaoe"]
+[ext_resource type="Texture2D" uid="uid://cv037gxjc73dx" path="res://Assets/images/game_background.png" id="4_lqa88"]
+[ext_resource type="Texture2D" uid="uid://c384p0ixedr2g" path="res://Assets/images/mouse.png" id="4_rjaoe"]
 [ext_resource type="Script" path="res://Scripts/Mouse.cs" id="5_6e6tj"]
-[ext_resource type="Texture2D" uid="uid://c2dkffnw3h21s" path="res://Assets/images/Untitled_Artwork59.png" id="7_p6osf"]
-[ext_resource type="Texture2D" uid="uid://d2bmdfiwihp1q" path="res://Assets/images/slice_0.png" id="9_2qpxe"]
-[ext_resource type="Texture2D" uid="uid://bted2mldfyonx" path="res://Assets/images/uWin.png" id="10_sacxr"]
+[ext_resource type="AudioStream" uid="uid://bu18x0tw8pr6h" path="res://Assets/sounds/surprise.mp3" id="7_ggqst"]
+[ext_resource type="Texture2D" uid="uid://bamsh7b6tl4bs" path="res://Assets/animations/greg_sequence/greg_001.png" id="8_4h3wv"]
+[ext_resource type="Texture2D" uid="uid://fg23ahnte52y" path="res://Assets/images/slice_0.png" id="9_2qpxe"]
+[ext_resource type="Texture2D" uid="uid://cbejsieeab17v" path="res://Assets/animations/greg_sequence/greg_002.png" id="9_wmvq5"]
+[ext_resource type="Texture2D" uid="uid://bgjria0q75lyc" path="res://Assets/animations/greg_sequence/greg_003.png" id="10_i1nal"]
 [ext_resource type="Script" path="res://Scripts/GregWin.cs" id="11_1jkuj"]
-[ext_resource type="Texture2D" uid="uid://7hmf1jt0lx2c" path="res://Assets/images/uLose.png" id="11_4hn6c"]
+[ext_resource type="Texture2D" uid="uid://copymfffivrf0" path="res://Assets/animations/greg_sequence/greg_004.png" id="11_lq461"]
 [ext_resource type="Script" path="res://Scripts/MouseWin.cs" id="12_0qg6l"]
-[ext_resource type="AudioStream" uid="uid://bc70xcrq0utgn" path="res://Assets/sounds/clapping-music-for-typographic-video-version-2-112975.mp3" id="12_h28xg"]
+[ext_resource type="Texture2D" uid="uid://c1icmqri1al15" path="res://Assets/animations/greg_sequence/greg_005.png" id="12_f3wnb"]
+[ext_resource type="AudioStream" uid="uid://bkno8alfxiedg" path="res://Assets/sounds/clapping-music-for-typographic-video-version-2-112975.mp3" id="12_h28xg"]
 [ext_resource type="Script" path="res://Scripts/WinGame.cs" id="13_cglb6"]
+[ext_resource type="Texture2D" uid="uid://bbkmiuw7ux5pc" path="res://Assets/animations/greg_sequence/greg_006.png" id="13_yqijk"]
+[ext_resource type="Texture2D" uid="uid://1md70e2lv3es" path="res://Assets/animations/greg_sequence/greg_007.png" id="14_ci37t"]
+[ext_resource type="Texture2D" uid="uid://ba2hk0ec58wpm" path="res://Assets/animations/greg_sequence/greg_008.png" id="15_1g5ae"]
 [ext_resource type="Script" path="res://Scripts/LooseGame.cs" id="15_cirlh"]
-[ext_resource type="AudioStream" uid="uid://bu8jowd247dvb" path="res://Assets/sounds/worlds-smallest-violin-made-with-Voicemod.mp3" id="16_fmdf8"]
+[ext_resource type="AudioStream" uid="uid://eclrnptkl6pk" path="res://Assets/sounds/worlds-smallest-violin-made-with-Voicemod.mp3" id="16_fmdf8"]
+[ext_resource type="Texture2D" uid="uid://bb4dya1fvsdbe" path="res://Assets/animations/greg_sequence/greg_009.png" id="16_v7vyn"]
+[ext_resource type="Texture2D" uid="uid://bpaxqrpx0plaw" path="res://Assets/animations/greg_sequence/greg_010.png" id="17_lnvlh"]
 [ext_resource type="StyleBox" uid="uid://b2td2oca2eyyk" path="res://Assets/greg_cake_quest_buttons.tres" id="18_6nevf"]
+[ext_resource type="Texture2D" uid="uid://clcx561dkjjhs" path="res://Assets/animations/greg_sequence/greg_011.png" id="18_qg2yw"]
 [ext_resource type="Script" path="res://Scripts/ButtonStartStop.cs" id="18_tpw2f"]
+[ext_resource type="Texture2D" uid="uid://dhk4yvttwiert" path="res://Assets/animations/greg_sequence/greg_012.png" id="19_y3l0s"]
 [ext_resource type="FontFile" uid="uid://dxuuwdtqlo4xc" path="res://Assets/fonts/LibreBaskerville-Bold.ttf" id="20_731x5"]
 [ext_resource type="FontFile" uid="uid://bihrj08qn5422" path="res://Assets/fonts/ConcertOne-Regular.ttf" id="20_apov8"]
-[ext_resource type="Texture2D" uid="uid://dgaqvot4i8hi3" path="res://Assets/images/noun-speaker-border.svg" id="20_tbp1l"]
-[ext_resource type="Texture2D" uid="uid://bm3k5vvajnwva" path="res://Assets/images/noun-danger-border.svg" id="21_3wwly"]
+[ext_resource type="Texture2D" uid="uid://r6sfm3e2go11" path="res://Assets/animations/greg_sequence/greg_013.png" id="20_kjyil"]
+[ext_resource type="Texture2D" uid="uid://d1rm1khc3necd" path="res://Assets/images/noun-speaker-border.svg" id="20_tbp1l"]
+[ext_resource type="Script" path="res://Scripts/ButtonSoundOff.cs" id="21_1yalj"]
+[ext_resource type="Texture2D" uid="uid://b7lecnibmiwkc" path="res://Assets/images/noun-danger-border.svg" id="21_3wwly"]
+[ext_resource type="Texture2D" uid="uid://dakytmuq0i7lv" path="res://Assets/animations/greg_sequence/greg_014.png" id="21_ogkeb"]
+[ext_resource type="Script" path="res://Scripts/ButtonInfo.cs" id="23_pk5jy"]
+[ext_resource type="AudioStream" uid="uid://dxig6dwsn5t7i" path="res://Assets/sounds/sinister-laugh-140131.mp3" id="23_wsg7x"]
+[ext_resource type="Texture2D" uid="uid://c672gqrwlk0qq" path="res://Assets/images/mouse_loose.png" id="26_ofowi"]
+[ext_resource type="Texture2D" uid="uid://x8js0bxq0t2r" path="res://Assets/images/InfoImage.png" id="27_63hbv"]
+[ext_resource type="Script" path="res://Scripts/ButtonOK.cs" id="28_qswkt"]
+[ext_resource type="Texture2D" uid="uid://ck65lxctefvxr" path="res://Assets/images/greg_loose.png" id="30_wowtl"]
+[ext_resource type="Texture2D" uid="uid://csvvhe1q8tdqd" path="res://Assets/images/greg.png" id="39_tqg2b"]
+[ext_resource type="VideoStream" path="res://Assets/animations/greg_intro/greg_intro_output.ogv" id="43_lkqga"]
+[ext_resource type="AudioStream" uid="uid://djuiq1r04djww" path="res://Assets/animations/greg_intro/greg_intro.mp3" id="44_ybhs2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mcw8p"]
 size = Vector2(26, 19)
@@ -31,7 +54,55 @@ size = Vector2(26, 19)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsnnj"]
 size = Vector2(56, 56)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ncon0"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_xgd1y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_y3l0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kjyil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ogkeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4h3wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wmvq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i1nal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lq461")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f3wnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yqijk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ci37t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1g5ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_v7vyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lnvlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qg2yw")
+}],
+"loop": false,
+"name": &"left_right",
+"speed": 14.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6xfhj"]
 size = Vector2(56, 57)
@@ -65,18 +136,21 @@ script = ExtResource("1_4rnmf")
 
 [node name="BackgroundAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_ecq5s")
-volume_db = -10.0
+volume_db = -22.0
 script = ExtResource("3_gt5mi")
 
-[node name="GameArea" type="ColorRect" parent="."]
+[node name="GameArea" type="TextureRect" parent="."]
 offset_left = 7.0
 offset_top = 7.0
 offset_right = 707.0
 offset_bottom = 707.0
-color = Color(0.972581, 0.699479, 0.733983, 1)
+texture = ExtResource("4_lqa88")
+expand_mode = 3
+stretch_mode = 4
 metadata/_edit_lock_ = true
 
 [node name="PieceCake" type="Area2D" parent="GameArea"]
+visible = false
 position = Vector2(600, 130)
 script = ExtResource("2_c8gwa")
 
@@ -91,25 +165,32 @@ stretch_mode = 4
 position = Vector2(37, 37)
 shape = SubResource("RectangleShape2D_mcw8p")
 
+[node name="GregCatchAudio" type="AudioStreamPlayer2D" parent="GameArea/PieceCake"]
+stream = ExtResource("7_ggqst")
+volume_db = -15.0
+
 [node name="Greg" type="Area2D" parent="GameArea"]
+visible = false
 script = ExtResource("4_ei0jm")
 
 [node name="Collision" type="CollisionShape2D" parent="GameArea/Greg"]
 position = Vector2(35, 35)
 shape = SubResource("RectangleShape2D_jsnnj")
 
-[node name="TextureRect" type="TextureRect" parent="GameArea/Greg"]
-offset_right = 140.0
-offset_bottom = 140.0
+[node name="GregSprite" type="AnimatedSprite2D" parent="GameArea/Greg"]
+position = Vector2(35, 35)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_p6osf")
-expand_mode = 3
-stretch_mode = 4
+sprite_frames = SubResource("SpriteFrames_xgd1y")
+animation = &"left_right"
+speed_scale = 4.0
+flip_h = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="GameArea/Greg"]
-sprite_frames = SubResource("SpriteFrames_ncon0")
+[node name="MouseStoleCake" type="AudioStreamPlayer2D" parent="GameArea/Greg"]
+stream = ExtResource("23_wsg7x")
+pitch_scale = 2.2
 
 [node name="Mouse" type="Area2D" parent="GameArea"]
+visible = false
 position = Vector2(230, 430)
 script = ExtResource("5_6e6tj")
 
@@ -127,11 +208,9 @@ stretch_mode = 4
 [node name="GregWin" type="TextureRect" parent="GameArea"]
 visible = false
 layout_mode = 0
-offset_left = 14.0
-offset_top = 14.0
-offset_right = 686.0
-offset_bottom = 686.0
-texture = ExtResource("10_sacxr")
+offset_right = 700.0
+offset_bottom = 700.0
+texture = ExtResource("26_ofowi")
 expand_mode = 3
 stretch_mode = 5
 script = ExtResource("11_1jkuj")
@@ -144,11 +223,9 @@ script = ExtResource("13_cglb6")
 [node name="MouseWin" type="TextureRect" parent="GameArea"]
 visible = false
 layout_mode = 0
-offset_left = 14.0
-offset_top = 14.0
-offset_right = 686.0
-offset_bottom = 686.0
-texture = ExtResource("11_4hn6c")
+offset_right = 700.0
+offset_bottom = 700.0
+texture = ExtResource("30_wowtl")
 expand_mode = 3
 stretch_mode = 5
 script = ExtResource("12_0qg6l")
@@ -166,12 +243,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 714.0
 offset_top = 427.0
-offset_right = 1106.0
+offset_right = 1107.0
 offset_bottom = 707.0
 grow_horizontal = 0
 grow_vertical = 0
 color = Color(0.972549, 0.698039, 0.733333, 1)
-metadata/_edit_lock_ = true
 
 [node name="buttonStartStop" type="Button" parent="ControlArea"]
 layout_mode = 0
@@ -298,6 +374,8 @@ icon = ExtResource("20_tbp1l")
 flat = true
 icon_alignment = 1
 expand_icon = true
+script = ExtResource("21_1yalj")
+metadata/_edit_lock_ = true
 
 [node name="buttonInfo" type="Button" parent="ControlArea"]
 layout_mode = 0
@@ -320,6 +398,8 @@ icon = ExtResource("21_3wwly")
 flat = true
 icon_alignment = 1
 expand_icon = true
+script = ExtResource("23_pk5jy")
+metadata/_edit_lock_ = true
 
 [node name="ScoreArea" type="ColorRect" parent="."]
 anchors_preset = 1
@@ -394,6 +474,7 @@ theme_override_font_sizes/font_size = 24
 text = "Greg Catch"
 horizontal_alignment = 2
 vertical_alignment = 1
+metadata/_edit_lock_ = true
 
 [node name="labelMouseCounter" type="Label" parent="ScoreArea"]
 layout_mode = 1
@@ -450,7 +531,7 @@ layout_mode = 0
 offset_left = 217.0
 offset_right = 385.0
 offset_bottom = 161.0
-texture = ExtResource("7_p6osf")
+texture = ExtResource("39_tqg2b")
 expand_mode = 3
 stretch_mode = 5
 metadata/_edit_lock_ = true
@@ -485,6 +566,48 @@ expand_mode = 2
 stretch_mode = 6
 metadata/_edit_lock_ = true
 
+[node name="Intro" type="VideoStreamPlayer" parent="."]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 707.0
+offset_bottom = 707.0
+stream = ExtResource("43_lkqga")
+volume_db = -3.0
+autoplay = true
+expand = true
+buffering_msec = 1000
+
+[node name="Audiotrack" type="AudioStreamPlayer2D" parent="Intro"]
+stream = ExtResource("44_ybhs2")
+autoplay = true
+
+[node name="InfoArea" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 1094.0
+offset_bottom = 694.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("27_63hbv")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_lock_ = true
+
+[node name="ButtonOK" type="Button" parent="InfoArea"]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 613.0
+offset_right = 1061.0
+offset_bottom = 659.0
+text = "OK"
+script = ExtResource("28_qswkt")
+
 [connection signal="area_entered" from="GameArea/PieceCake" to="GameArea/PieceCake" method="_on_area_entered"]
 [connection signal="area_entered" from="GameArea/Greg" to="GameArea/Greg" method="_greg_area_entered"]
 [connection signal="pressed" from="ControlArea/buttonStartStop" to="ControlArea/buttonStartStop" method="_on_pressed"]
@@ -492,3 +615,6 @@ metadata/_edit_lock_ = true
 [connection signal="pressed" from="ControlArea/buttonDown" to="GameArea/Greg" method="_on_button_down_pressed"]
 [connection signal="pressed" from="ControlArea/buttonRight" to="GameArea/Greg" method="_on_button_right_pressed"]
 [connection signal="pressed" from="ControlArea/buttonLeft" to="GameArea/Greg" method="_on_button_left_pressed"]
+[connection signal="pressed" from="ControlArea/buttonSoundOff" to="ControlArea/buttonSoundOff" method="_on_pressed"]
+[connection signal="pressed" from="ControlArea/buttonInfo" to="ControlArea/buttonInfo" method="_on_pressed"]
+[connection signal="pressed" from="InfoArea/ButtonOK" to="InfoArea/ButtonOK" method="_on_pressed"]

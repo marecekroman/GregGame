@@ -34,6 +34,7 @@ public partial class PieceCake : Area2D{
     // Called when the node enters the area.
     private void _on_area_entered(Area2D area) {
         if (area is Mouse mouse) {
+            GregCakeQuest.MouseCatchGregPlayAudio();
             mouse.Reset();
             speed = spawnTimer;
             Visible = false;
@@ -42,6 +43,7 @@ public partial class PieceCake : Area2D{
 
         // Greg collect piece of cake
         if (area is Greg greg) {
+            GregCakeQuest.GregCatchCakePlayAudio();
             Visible = false;
             GregCakeQuest.UpdateGregCounter(1);
         }

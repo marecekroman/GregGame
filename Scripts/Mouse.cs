@@ -78,20 +78,6 @@ public partial class Mouse : Area2D{
         }
     }
 
-    /*// Mouse random spawn
-    private void _RandomSpawn(double delta) {
-        if (_speed < 0.0f) {
-            Visible = true;
-            var deltaX = _randomNumberGenerator.RandiRange(0, 9);
-            var deltaY = _randomNumberGenerator.RandiRange(0, 9);
-
-            Position = new Vector2(deltaX * 70.0f, deltaY * 70.0f);
-            _speed = SpawnTimer;
-        }
-
-        _speed -= delta;
-    }*/
-
     // Called when the node enters the area.
     public void Reset() {
         Visible = false;

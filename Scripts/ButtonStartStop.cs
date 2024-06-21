@@ -5,10 +5,15 @@ public partial class ButtonStartStop : Button{
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		GregCakeQuest.SetGameRunning(false);
+		Visible = false;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta) {
+		if (!GregCakeQuest.GetIntro().IsPlaying()) {
+			Visible = true;
+		}
+
 		if (GregCakeQuest.IsGameRunning()) {
 			Text = "Game Stop";
 			return;
@@ -21,6 +26,7 @@ public partial class ButtonStartStop : Button{
 		if (GregCakeQuest.IsGameRunning()) {
 			GregCakeQuest.SetGameRunning(false);
 			Text = "Game Start";
+			GregCakeQuest.HideAllSprites();
 			return;
 		}
 
@@ -28,5 +34,7 @@ public partial class ButtonStartStop : Button{
 		GregCakeQuest.ResetGregCounter();
 		GregCakeQuest.ResetMouseCounter();
 		GregCakeQuest.SetGameRunning(true);
+
+		GregCakeQuest.ShowAllSprites();
 	}
 }
