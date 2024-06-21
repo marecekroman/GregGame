@@ -91,7 +91,7 @@
 # Description: Create a PowerPoint presentation summarizing the project, development process, and key features of the game.
 - **Assigned to: Both**
 - **Estimated Time: 1 day**
-- **Status: Open**
+- **Status: Done**
 
 # Review & Retrospective (21.06.2024)
 - **Review: Final testing and demonstration of the complete game.**

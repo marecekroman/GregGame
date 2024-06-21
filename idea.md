@@ -3,7 +3,7 @@
 "Greg's Cake Quest" is a 2D arcade-style game where players control a character in an open environment, racing to collect cake pieces while avoiding a mischievous mouse. The game focuses on fast-paced gameplay, strategic movement, and fun, colorful graphics, inspired by classic arcade games like "Pac-Man" and "Bomberman."
 
 ## Storyline:
-TO BE DONE
+The game is based on the YouTube channel https://www.youtube.com/@dellieavelix  wheres the author Elena Raskova publishes short humorous videos about the fictional character Greg.
 
 ## Game Objective
 Assist Greg in collecting scattered cake pieces across level while dodging mouse, enhancing both the strategic and quick reflex skills of players.
